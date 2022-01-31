@@ -54,12 +54,12 @@ function App() {
     <div>
       <header className="cabecalhoPrincipal">
         <div className="container">
-        <Link to="/"> <img src={logo} alt="Logo da Gufi" /> </Link>
+        <Link to="/"> <img src={logo} alt="Logo da Patrimonio" /> </Link>
 
           <nav className="cabecalhoPrincipal-nav">
             <Link to="/">Home</Link>
-            <Link to="/meusEventos">Meus eventos</Link>
-            <a href="#conteudoPrincipal-contato">Contato</a>
+            {/*<Link to="/meusEventos">Meus eventos</Link>*/}
+            {/*<a href="#conteudoPrincipal-contato">Contato</a>*/}
             {/* <a className="cabecalhoPrincipal-nav-login" href="/login">Login</a> */}
             <Link className="cabecalhoPrincipal-nav-login" to="/login">Login</Link>
           </nav>
@@ -68,42 +68,42 @@ function App() {
 
       <section className="conteudoImagem">
         <div>
-          <h1>Gufi</h1>
-          <h2>Área de eventos da Escola SENAI de Informática.</h2>
+          <h1>Patrimônio</h1>
+          <h2>Área para controle de patrimônio.</h2>
         </div>
       </section>
 
       <main className="conteudoPrincipal">
-        <section id="conteudoPrincipal-eventos">
-          <h1 id="conteudoPrincipal-eventos-titulo">Próximos Eventos</h1>
-          <div className="container">
-            <nav>
-              <ul className="conteudoPrincipal-dados">
+        {/*<section id="conteudoPrincipal-eventos">*/}
+        {/*  <h1 id="conteudoPrincipal-eventos-titulo">Próximos Eventos</h1>*/}
+        {/*  <div className="container">*/}
+        {/*    <nav>*/}
+        {/*      <ul className="conteudoPrincipal-dados">*/}
 
-                {
-                  listaEventos.map( (evento) => {
-                    return(
-                      <li key={evento.idEvento} className="conteudoPrincipal-dados-link eventos">
-                        <h2>{evento.nomeEvento}</h2>
-                        <p>{evento.descricao}</p>
-                        <p>{ Intl.DateTimeFormat("pt-BR", {
-                                year: 'numeric', month: 'numeric', day: 'numeric',
-                                hour: 'numeric', minute: 'numeric',
-                                hour12: true                                                
-                            }).format(new Date(evento.dataEvento)) }</p>
-                        <button onClick={ () => inscrever(evento) }>me inscrever</button>
-                      </li>
-                    )
-                  } )
-                }
+        {/*        {*/}
+        {/*          listaEventos.map( (evento) => {*/}
+        {/*            return(*/}
+        {/*              <li key={evento.idEvento} className="conteudoPrincipal-dados-link eventos">*/}
+        {/*                <h2>{evento.nomeEvento}</h2>*/}
+        {/*                <p>{evento.descricao}</p>*/}
+        {/*                <p>{ Intl.DateTimeFormat("pt-BR", {*/}
+        {/*                        year: 'numeric', month: 'numeric', day: 'numeric',*/}
+        {/*                        hour: 'numeric', minute: 'numeric',*/}
+        {/*                        hour12: true                                                */}
+        {/*                    }).format(new Date(evento.dataEvento)) }</p>*/}
+        {/*                <button onClick={ () => inscrever(evento) }>me inscrever</button>*/}
+        {/*              </li>*/}
+        {/*            )*/}
+        {/*          } )*/}
+        {/*        }*/}
 
-              </ul>
-            </nav>
-          </div>
-        </section>
+        {/*      </ul>*/}
+        {/*    </nav>*/}
+        {/*  </div>*/}
+        {/*</section>*/}
 
         <section id="conteudoPrincipal-visao">
-          <h1 id="conteudoPrincipal-visao-titulo">Por Quê Participar?</h1>
+          <h1 id="conteudoPrincipal-visao-titulo">Nosso serviço</h1>
           <div className="container">
             <p className="visao-texto">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />

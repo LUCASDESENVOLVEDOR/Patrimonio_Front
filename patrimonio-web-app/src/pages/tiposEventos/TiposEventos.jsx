@@ -194,7 +194,7 @@ export default class TiposEventos extends Component {
         <header className="cabecalhoPrincipal">
           <div className="container">
             <Link to="/">
-              <img src={logo} alt="Logo da Gufi" />{' '}
+              <img src={logo} alt="Logo da Patrimonio" />{' '}
             </Link>
 
             <nav className="cabecalhoPrincipal-nav">Administrador</nav>

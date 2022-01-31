@@ -96,7 +96,7 @@ export default class Login extends Component {
                         <div className="item__login">
                             <div className="row">
                                 <div className="item">
-                                <Link to="/"><img src={logo} className="icone__login" alt="logo da Gufi" /> </Link>
+                                <Link to="/"><img src={logo} className="icone__login" alt="logo da Patrimonio" /> </Link>
                                 </div>
                                 <div className="item" id="item__title">
                                     <p className="text__login" id="item__description">
