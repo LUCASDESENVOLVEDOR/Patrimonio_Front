@@ -58,26 +58,21 @@ a {
 
 /* IMagem Home */
 .conteudoImagem {
-  /* Sizing */
-  height: 100vh;
-
-  /* Flexbox */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  /* Text styles */
-  text-align: center;
-  color: white;
-
-  /* Background styles */
-  background-image: linear-gradient(rgba(111, 71, 255, 0.5),
-    rgba(111, 71, 255, 0.5)),
-    url("../img/abstract.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+    /* Sizing */
+    height: 100vh;
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Text styles */
+    text-align: center;
+    color: white;
+    /* Background styles */
+    background-image: linear-gradient(rgb(255 71 71 / 0%), rgba(111, 71, 255, 0.5)), url("../img/abstract.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .conteudoImagem h1 {
@@ -118,13 +113,13 @@ a {
 }
 
 nav .cabecalhoPrincipal-nav-login {
-  border: 3px solid;
-  border-image: linear-gradient(to right, rgb(183, 39, 255), rgb(69, 90, 255));
-  border-image-slice: 1;
-  margin: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-  text-decoration: none;
+    border: 3px solid;
+    border-image: linear-gradient(to right, rgb(39 58 255 / 76%), rgb(69, 90, 255));
+    border-image-slice: 1;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
 }
 
 /* Conteúdo principal DASHBOARD */
@@ -291,16 +286,16 @@ nav .cabecalhoPrincipal-nav-login {
 /* Conteúdo sobre a visão */
 
 #conteudoPrincipal-visao {
-  height: 50vh;
-  color: white;
-  background-image: linear-gradient(rgba(111, 71, 255, 0.7), rgba(111, 71, 255, 0.8)), url("../img/visao.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin-top: 40px;
-  -webkit-clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 11%);
-  clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 11%);
+    height: 50vh;
+    color: white;
+    background-image: linear-gradient(rgb(255 71 71 / 0%), rgb(111 71 255 / 0%)), url("../img/visao.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 40px;
+    -webkit-clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 11%);
+    clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 11%);
 }
 
 #conteudoPrincipal-visao-titulo {

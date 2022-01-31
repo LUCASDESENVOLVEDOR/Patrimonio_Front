@@ -114,22 +114,22 @@ function App() {
           </div>
         </section>
 
-        <section id="conteudoPrincipal-contato">
-          <h1 id="conteudoPrincipal-contato-titulo">Contato</h1>
-          <div
-            className="container conteudo-contato-titulo"
-          >
-            <div
-              className="contato-mapa conteudo-contato-mapa"
-            ></div>
-            <div
-              className="contato-endereco conteudo-contato-endereco"
-            >
-              Alameda Barão de Limeira, 539 <br />
-              São Paulo - SP
-            </div>
-          </div>
-        </section>
+        {/*<section id="conteudoPrincipal-contato">*/}
+        {/*  <h1 id="conteudoPrincipal-contato-titulo">Contato</h1>*/}
+        {/*  <div*/}
+        {/*    className="container conteudo-contato-titulo"*/}
+        {/*  >*/}
+        {/*    <div*/}
+        {/*      className="contato-mapa conteudo-contato-mapa"*/}
+        {/*    ></div>*/}
+        {/*    <div*/}
+        {/*      className="contato-endereco conteudo-contato-endereco"*/}
+        {/*    >*/}
+        {/*      Alameda Barão de Limeira, 539 <br />*/}
+        {/*      São Paulo - SP*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</section>*/}
       </main>
 
         <Rodape />

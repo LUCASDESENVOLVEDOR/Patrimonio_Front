@@ -42,7 +42,7 @@ body {
 
 .img__overlay {
   /* rgb(111,71,255) */
-  background: rgba(111, 71, 255, 0.41);
+  /*background: rgba(111, 71, 255, 0.41);*/
   overflow: hidden;
   height: 100vh;
   z-index: 2;

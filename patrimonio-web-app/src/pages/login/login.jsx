@@ -55,7 +55,7 @@ export default class Login extends Component {
                     // console.log( parseJwt().role );
 
                     // exibe as propriedades da página
-                    console.log(this.props);
+                    console.log(parseJwt());
 
                     // verifica se o usuário logado é do tipo administrador
                     if (parseJwt().role === '1' ) {
@@ -117,7 +117,7 @@ export default class Login extends Component {
                                             value={this.state.email}
                                             // faz a chamada para a função que atualiza o state, conforme o usuário altera o valor do input
                                             onChange={this.atualizaStateCampo}
-                                            placeholder="username"
+                                            placeholder="email"
                                         />
                                     </div>
                                     <div className="item">
