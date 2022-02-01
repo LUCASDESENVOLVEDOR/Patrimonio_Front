@@ -58,8 +58,10 @@ export default class Login extends Component {
                     console.log(parseJwt());
 
                     // verifica se o usuário logado é do tipo administrador
+                    //mudar aqui e no menu principal se o cadastro for liberado para
+                    //todos os usuarios
                     if (parseJwt().role === '1' ) {
-                        this.props.history.push('/tiposeventos');
+                        this.props.history.push('/patrimonio');
                         console.log('estou logado: ' + usuarioAutenticado())
                     }
 

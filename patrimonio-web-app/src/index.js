@@ -12,14 +12,12 @@ import './index.css';
 
 import Home from './pages/home/App';
 import Login from './pages/login/login';
-import TiposEventos from './pages/tiposEventos/TiposEventos.jsx';
-import EventosAdm from './pages/eventosAdm/eventosAdm';
-import MeusEventos from './pages/meusEventos/meusEventos';
-import TiposUsuarios from './pages/tiposUsuarios/tiposUsuarios';
-import Perfil from './pages/perfil/perfil';
+
+import Usuario from './pages/usuario/usuario';
 import NotFound from './pages/notFound/NotFound';
 
 import reportWebVitals from './reportWebVitals';
+import Patrimonio from './pages/patrimonio/patrimonio';
 
 const PermissaoAdm = ({ component: Component }) => (
   <Route
@@ -53,12 +51,9 @@ const routing = (
       <Switch>
         <Route exact path="/" component={Home} /> {/* Home */}
         <Route path="/login" component={Login} /> {/* Login */}
-        <PermissaoAdm path="/tiposEventos" component={TiposEventos} /> {/* Tipos Eventos */}
-        <PermissaoAdm path="/tiposUsuarios" component={TiposUsuarios} /> {/* Tipos Usuários */}
-        <PermissaoAdm path="/eventosAdm" component={EventosAdm} /> {/* Eventos Adm */}
-        <PermissaoComum path="/meusEventos" component={MeusEventos} /> {/* Meus Eventos */}
-        <Route path="/perfil" component={Perfil} /> {/* Perfil */}
-
+        <PermissaoAdm path="/patrimonio" component={Patrimonio} /> {/* Patrimonio */}
+        <PermissaoAdm path="/usuario" component={Usuario} /> {/* Tipos Usuários */}
+     
         <Route path="/notFound" component={NotFound} /> {/* Not Found */}
         <Redirect to="/notFound" /> {/* Redireciona para Not Found caso não encontre nenhuma rota */}
       </Switch>
